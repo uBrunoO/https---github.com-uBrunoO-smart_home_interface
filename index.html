@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Inteligente - Controle</title>
+  <link rel="stylesheet" href="css/panel_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="js/mqttws31.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="logout-container">
+      <button class="logout-btn" onclick="logout()">Sair <i class="fas fa-sign-out-alt"></i></button>
+    </div>
+    
+    <header>
+      <h1>Casa Inteligente</h1>
+      <p>Controle de Ambientes</p>
+    </header>
+    
+    <div class="dashboard" id="dashboard-content">
+      <!-- Os cartões dos cômodos serão gerados pelo JavaScript -->
+    </div>
+  </div>
+  
+  <footer>
+    &copy; 2026 Casa Inteligente | Sistema de Automação | Bruno Gonçalves
+  </footer>
+
+  <script src="js/panel_script.js"></script>
+</body>
+</html>

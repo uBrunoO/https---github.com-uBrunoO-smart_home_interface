@@ -1,0 +1,159 @@
+    :root {
+      --primary: #3498db;
+      --secondary: #2ecc71;
+      --dark: #2c3e50;
+      --light: #ecf0f1;
+      --danger: #e74c3c;
+      --radius: 12px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #3498db, #2c3e50);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .login-container {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius);
+      overflow: hidden;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.5s ease-out;
+    }
+    .login-header {
+      background: var(--primary);
+      color: white;
+      padding: 25px 30px;
+      text-align: center;
+      border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    }
+    .login-header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+    .login-header p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    .login-body {
+      padding: 30px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: var(--dark);
+      font-size: 0.9rem;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #ddd;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+    .form-group input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+      outline: none;
+    }
+    .login-btn {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: var(--radius);
+      background: var(--primary);
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 10px;
+    }
+    .login-btn:hover {
+      background: #2980b9;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .login-btn:active {
+      transform: translateY(0);
+    }
+    .error-message {
+      background: var(--danger);
+      color: white;
+      padding: 12px;
+      border-radius: var(--radius);
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      display: none;
+      animation: shake 0.5s;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+      20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .house-icon {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    /* Ícone da casa com CSS */
+    .house-icon-css {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 15px;
+      position: relative;
+    }
+    .house-icon-css .roof {
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 25px solid white;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .house-icon-css .base {
+      width: 40px;
+      height: 35px;
+      background: white;
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+    }
+    .house-icon-css .door {
+      width: 15px;
+      height: 20px;
+      background: var(--primary);
+      position: absolute;
+      bottom: 0;
+      left: 22px;
+    }
+    .house-icon-css .window {
+      width: 8px;
+      height: 8px;
+      background: var(--primary);
+      position: absolute;
+      bottom: 20px;
+      left: 15px;
+      box-shadow: 22px 0 0 var(--primary);
+    }
+
